@@ -54,12 +54,12 @@ function showAnswerText(answer, answerText){
 function winner(){
     giveUp.disabled=true;
     submit.disabled=true;
-    finalAswer.innerHTML="<p class='text-center fs-5'>Felicidades!!<br>En contraste el codigo!!</p>";
+    finalAswer.innerHTML="<p class='text-center fs-5'>Felicidades!!<br>Encontraste el código!!</p>";
 }
 
 giveUp.addEventListener('click',()=>{
     submit.disabled=true;
-    finalAswer.innerHTML=`<p class="text-center fs-5">El codido es: ${secretCode}</p>`
+    finalAswer.innerHTML=`<p class="text-center fs-5">El código es: ${secretCode}</p>`
 })
 
 restart.addEventListener('click', ()=>{
