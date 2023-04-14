@@ -1,0 +1,41 @@
+body{
+    background-color: #fff;
+}
+.container{
+    margin: 20px;
+}
+.form-control{
+    max-width: 80px;
+}
+.list-group{
+    max-width: fit-content;
+}
+.container{
+    z-index: -2;
+}
+.results{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.information{
+    position: fixed;
+    top:40px;
+    z-index: 2;
+}
+.dropdown-menu{
+    padding: 5px;  
+    width: 400px;          
+}
+
+@media (max-width: 500px) {
+    .information span{
+        display: none;
+    }
+    .dropdown-menu{
+        max-width: 300px;
+    }
+    .input-group .btn-dark{
+        z-index: -2;
+    }
+}
