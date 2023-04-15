@@ -35,11 +35,15 @@ function makeRandomCode(){
 function checkAnswer(){
     let answer=(input.value).split('');
     let answerText="";
-
+    let numbersAnwer="";
     answer.forEach((element,index)=>{
-        if(secretCode.includes(element)){
-            answerText+=(secretCode.indexOf(element) == index) ? "*" : "-";
+        if(! numbersAnwer.includes(element)){
+            if(secretCode.includes(element)){
+                answerText+=(secretCode.indexOf(element) == index) ? "*" : "-";
+                numbersAnwer+=element;
+            }
         }
+        
     })
     showAnswerText(input.value, answerText.split('').sort().join(""));
     if(answerText=="****"){
