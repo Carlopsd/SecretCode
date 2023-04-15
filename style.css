@@ -35,7 +35,4 @@ body{
     .dropdown-menu{
         max-width: 300px;
     }
-    .input-group .btn-dark{
-        z-index: -2;
-    }
 }

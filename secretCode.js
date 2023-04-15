@@ -63,6 +63,7 @@ giveUp.addEventListener('click',()=>{
 })
 
 restart.addEventListener('click', ()=>{
+    secretCode= makeRandomCode();
     submit.disabled=false;
     giveUp.disabled=false;
     finalAswer.innerHTML="";
